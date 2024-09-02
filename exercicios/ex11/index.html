@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mídias em HTML</title>
+</head>
+<body>
+    <h1>Imagens dinâmicas</h1>
+    <p>Tente abrir esse site em um computar , tablet e telefone para ver os diferentes tamanhos</p>
+    <picture>
+        <source media="(max-width:750px )" srcset="imagens/foto-p.png" type="image/png">
+        <source media="(max-width:1050px )" srcset="imagens/foto-m.png" type="image/png">
+         <img src="imagens/foto-g.png" alt="imagem flexível"> 
+    </picture>
+    <h2>Reproduzindo Áudio</h2>
+    <p>Vamos aprender a reproduzir áudios em HTML5.</p>
+    <audio preload="metadata" autoplay controls loop>
+        <source src="audio/4._nagalli_confissoes_pt1_ft._dfideliz_cjota_menor_mc_leviano_magic_show_mp3_42747.mp3" type="audio/mpeg">
+        <source src="audio/4._nagalli_confissoes_pt1_ft._dfideliz_cjota_menor_mc_leviano_magic_show_mp3_42747.ogg" type="audio/ogg">
+        <source src="audio/4._nagalli_confissoes_pt1_ft._dfideliz_cjota_menor_mc_leviano_magic_show_mp3_42747.wav" type="audio/wav">
+        <p>Infelizmente o seu navegador não consegue reproduzir áudio. <a href="audio/4._nagalli_confissoes_pt1_ft._dfideliz_cjota_menor_mc_leviano_magic_show_mp3_42747.mp3" download="_nagalli_confissoes_pt1_ft.mp3" type="audio/mpeg">clique aqui para baixar o arquivo MP3</a>
+    </p>
+    </audio>
+    
+
+</body>
+</html>
