@@ -3,9 +3,180 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Tabelas</title>
+
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        table{
+            width: 500px;
+            border-collapse: collapse;
+            position: relative;
+        }
+
+        td,th {
+            border: 1px solid black;
+            padding: 10px;
+        }
+
+        caption{
+            font-size: 1.5em;
+            font-weight: bold;
+            padding: 10px;
+            background-color: lightgray;
+        }
+
+        tbody > tr:nth-child(odd){
+            background-color: aqua;
+        }
+
+        thead > tr > th{
+            position: sticky;
+            top: 0;
+            background-color: lightslategray;
+
+        }
+
+        td.num{
+            text-align: right;
+        }
+
+        thead, tfoot{
+            background-color: gray;
+            color:white ;
+        }
+    </style>
 </head>
 <body>
-    
+    <h1>Uso de tabelas grandes</h1>
+    <!--
+    ANATOMIA PARA TABELAS GRANDES
+    TABELAS
+    CAPTION= Legenda da tabela
+        THEAD
+            TR, TD, TH
+        TBOY
+            TR, TD, TH
+        TFOOT
+            TR, TD, TH        
+    -->
+    <table>
+        <caption>População das Unidades Federais</caption>
+        <thead>
+         <tr>
+            <th scope="col">Estado</th>
+            <th scope="col" style=" width: 50px;">População</th>
+
+         </tr>
+        </thead>
+        
+        <tbody>
+            <tr>
+            <td>Luanda</td>
+            <td class="num">45 919 049</td>
+        </tr>
+        <tr>
+            <td>Rio de Janeiro</td>
+            <td class="num">17 168 791</td>
+        </tr>
+        <tr>
+            <td>Malanje</td>
+            <td class="num">12 666 01</td>
+        </tr>
+        <tr>
+            <td>Benguela</td>
+            <td class="num">15 444 09</td>
+        </tr>
+        <tr>
+            <td>Bengo</td>
+            <td class="num">200 999 08</td>
+        </tr>
+        <tr>
+            <td>UÍge</td>
+            <td class="num">23 0000</td>
+        </tr>
+        <tr>
+            <td>Moxico</td>
+            <td class="num">23 444 90</td>
+        </tr>
+        <tr>
+            <td>Cabinda</td>
+            <td class="num">25 5555</td>
+        </tr>
+        <tr>
+            <td>Cunene</td>
+            <td class="num">24 66666</td>
+        </tr>
+        <tr>
+            <td>Cuanza Norte</td>
+            <td class="num">26 77777</td>
+        </tr>
+        <tr>
+            <td>Huíla</td>
+            <td class="num">27 77777</td>
+        </tr>
+        <tr>
+            <td>Kuando Kubango</td>
+            <td class="num">28 88888</td>
+        </tr>
+        <tr>
+            <td>Namibe</td>
+            <td class="num">29 9999</td>
+        </tr>
+        <tr>
+            <td>Zaire</td>
+            <td class="num">30 8888</td>
+        </tr>
+        <tr>
+            <td>Bié</td>
+            <td class="num">31 22222</td>
+        </tr>
+        <tr>
+            <td>Cuando Cubango</td>
+            <td class="num">32 33333</td>
+        </tr>
+        <tr>
+        <td>Cuanza Sul</td>
+        <td class="num">33 3333</td>
+        </tr>
+        <tr>
+            <td>Huambo</td>
+            <td>33 33333</td>
+        </tr>
+        <tr>
+            <td>Lunda sul</td>
+            <td>34 4444</td>
+        </tr>
+        <tr>
+            <td>Lunda Norte</td>
+            <td>35 5555</td>
+        </tr>
+        <tr>
+            <td>Cuando Cubango</td>
+            <td>36 666666</td>
+        </tr>
+        <tr>
+            <td>Cuanza sul</td>
+            <td>37 77777</td>
+        </tr>
+        </tbody>
+
+        <tfoot>
+            <th scope="row">Total de Habitantes</th>
+            <strong>
+                <td class="num">106.937.686</td>
+            </strong>
+        </tfoot>
+    </table>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ratione omnis alias nihil repellat itaque laborum consequuntur natus autem officia quod. Assumenda qui hic minima numquam corrupti exercitationem aspernatur excepturi neque. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam consequuntur nemo dolorum repudiandae quaerat architecto tenetur molestiae numquam, dicta maxime unde harum praesentium fugit illo aperiam asperiores impedit. Iste, laborum?</p>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ratione omnis alias nihil repellat itaque laborum consequuntur natus autem officia quod. Assumenda qui hic minima numquam corrupti exercitationem aspernatur excepturi neque. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam consequuntur nemo dolorum repudiandae quaerat architecto tenetur molestiae numquam, dicta maxime unde harum praesentium fugit illo aperiam asperiores impedit. Iste, laborum?</p>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ratione omnis alias nihil repellat itaque laborum consequuntur natus autem officia quod. Assumenda qui hic minima numquam corrupti exercitationem aspernatur excepturi neque. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam consequuntur nemo dolorum repudiandae quaerat architecto tenetur molestiae numquam, dicta maxime unde harum praesentium fugit illo aperiam asperiores impedit. Iste, laborum?</p>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ratione omnis alias nihil repellat itaque laborum consequuntur natus autem officia quod. Assumenda qui hic minima numquam corrupti exercitationem aspernatur excepturi neque. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam consequuntur nemo dolorum repudiandae quaerat architecto tenetur molestiae numquam, dicta maxime unde harum praesentium fugit illo aperiam asperiores impedit. Iste, laborum?</p>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ratione omnis alias nihil repellat itaque laborum consequuntur natus autem officia quod. Assumenda qui hic minima numquam corrupti exercitationem aspernatur excepturi neque. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam consequuntur nemo dolorum repudiandae quaerat architecto tenetur molestiae numquam, dicta maxime unde harum praesentium fugit illo aperiam asperiores impedit. Iste, laborum?</p>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ratione omnis alias nihil repellat itaque laborum consequuntur natus autem officia quod. Assumenda qui hic minima numquam corrupti exercitationem aspernatur excepturi neque. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam consequuntur nemo dolorum repudiandae quaerat architecto tenetur molestiae numquam, dicta maxime unde harum praesentium fugit illo aperiam asperiores impedit. Iste, laborum?</p>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ratione omnis alias nihil repellat itaque laborum consequuntur natus autem officia quod. Assumenda qui hic minima numquam corrupti exercitationem aspernatur excepturi neque. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam consequuntur nemo dolorum repudiandae quaerat architecto tenetur molestiae numquam, dicta maxime unde harum praesentium fugit illo aperiam asperiores impedit. Iste, laborum?</p>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ratione omnis alias nihil repellat itaque laborum consequuntur natus autem officia quod. Assumenda qui hic minima numquam corrupti exercitationem aspernatur excepturi neque. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam consequuntur nemo dolorum repudiandae quaerat architecto tenetur molestiae numquam, dicta maxime unde harum praesentium fugit illo aperiam asperiores impedit. Iste, laborum?</p>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ratione omnis alias nihil repellat itaque laborum consequuntur natus autem officia quod. Assumenda qui hic minima numquam corrupti exercitationem aspernatur excepturi neque. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam consequuntur nemo dolorum repudiandae quaerat architecto tenetur molestiae numquam, dicta maxime unde harum praesentium fugit illo aperiam asperiores impedit. Iste, laborum?</p>
 </body>
 </html>
