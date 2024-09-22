@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabela</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        table{
+            width: 600px;
+            border-collapse: collapse;
+        }
+
+        td{
+            border: 1px solid black;
+            padding: 5px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h1>Tabela Completa</h1>
+
+    <table>
+        <caption>
+            <strong>Mesclagem de Células</strong>
+        </caption>
+        <tr>
+            <td><strong>Grupo</strong></td>
+            <td><strong>Nomes</strong></td>
+            <td colspan="4"><strong>Filmes</strong></td>
+        </tr>
+        <tr>
+            <td rowspan="3"><strong>Mulheres</strong></td>
+            <td>Ana Maria Santos</td>
+            <td>Alien</td>
+            <td>Rambo</td>
+            <td>Vingadores</td>
+        </tr>
+        <tr>
+            <td>Beatriz Souza</td>
+            <td>Hulk</td>
+            <td>Incetion</td>
+            <td>Batman</td>
+        </tr>
+        <tr>
+           <td>Mendonça</td>
+            <td>The weeknd</td>
+            <td>Daniela Bruna</td>
+            <td>Rock And Morty</td>
+        </tr>
+        <tr>
+             <td rowspan="3"><strong>Homens</strong></td>
+            <td>Coringa</td>
+            <td>Fabiano</td>
+            <td>Roy</td>
+            <td>Rui</td>
+        </tr>
+        <tr>
+            <td>Saitama</td>
+            <td>Kimetsu</td>
+            <td>Kaiju</td>
+            <td>Kapeta</td>
+        </tr>
+        <tr>
+            <td>Kina</td>
+            <td>Bela</td>
+            <td>Strang</td>
+            <td>Thing</td>
+        </tr>
+    </table>
+</body>
+</html>
